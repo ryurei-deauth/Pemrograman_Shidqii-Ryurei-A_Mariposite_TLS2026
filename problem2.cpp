@@ -37,7 +37,7 @@ int main() {
         return 0;
     }
 
-    // Hitung panjang dan ubah huruf kecil secara manual.
+    // hitung panjang dan ubah huruf kecil manual
     while (pesan[panjang] != '\0') {
         if (pesan[panjang] >= 'a' && pesan[panjang] <= 'z') {
             pesan[panjang] = pesan[panjang] - 'a' + 'A';
@@ -65,10 +65,10 @@ int main() {
 
     for (int i = 1; i < panjang; i++) {
         if (pilihan == 1) {
-            // Enkripsi memakai huruf asli sebelumnya.
+            // enkripsi memakai huruf asli sebelumnya
             hasil[i] = enkripsi(pesan[i], pesan[i - 1]);
         } else {
-            // Dekripsi memakai huruf asli yang sudah ditemukan.
+            // dekripsi memakai huruf asli yang ditemukan
             hasil[i] = dekripsi(pesan[i], hasil[i - 1]);
         }
     }
