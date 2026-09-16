@@ -31,7 +31,7 @@ int main() {
     }
 
     while (sisa > 1) {
-        // Posisi awal ikut dihitung, jadi maju sebanyak K - 1.
+        // posisi awal ikut dihitung jadi maju sebanyak K - 1.
         posisi = (posisi + k - 1) % sisa;
         int keluar = astronot[posisi];
         cout << keluar;
@@ -40,7 +40,7 @@ int main() {
             cout << " ";
         }
 
-        // Geser isi array untuk menghapus astronot yang keluar.
+        // geser isi array buat menghapus astronot yang keluar
         for (int i = posisi; i < sisa - 1; i++) {
             astronot[i] = astronot[i + 1];
         }
@@ -56,7 +56,7 @@ int main() {
             k = 2;
         }
 
-        // Jika posisi terakhir dihapus, lanjut dari awal array.
+        // kalau posisi terakhir dihapus lanjut dari awal array
         if (posisi == sisa) {
             posisi = 0;
         }
